@@ -1,0 +1,33 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"
+            [ngStyle]="styleImage">
+        </div>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <mat-card-subtitle>{{ product.ref }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="product.image" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            {{ product.description }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="AddProduct()">Me gusta</button>
+        <button mat-button (click)="markCompleted(product)">Compartir</button>
+    </mat-card-actions>
+</mat-card>
+
+
+
+
+<!-- <div class="product">
+    <span> {{ product.id }}</span>
+    <span> {{ product.name }}</span>
+    <span> {{ product.ref }}</span>
+    <span> {{ product.price }}</span>
+    <span> {{ product.status }}</span>
+    <span> {{ product.marca }}</span>
+    <span> {{ product.disponibility }}</span>
+    <span> {{ product.description }}</span>
+</div> -->
