@@ -9,10 +9,14 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AngularFireModule.initializeApp(environment.config_firebase),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AngularFireStorageModule, // storage
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
