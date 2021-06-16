@@ -12,11 +12,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { GenericSectionComponent } from './generic-section/generic-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactoComponent
+    ContactoComponent,
+    GenericSectionComponent
   ],
   imports: [
     BrowserModule,
