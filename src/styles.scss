@@ -7,6 +7,7 @@
     --color-grey: #748c8c;
     --color-grey2: #94a4a4;
     --primary500: rgba(11, 175, 220, 0.5);
+    --primary1000: rgba(11, 175, 220, 0.1);
     --danger: #fb3e7c;
 }
 
@@ -135,4 +136,8 @@ svg#clouds {
         display: none;
         visibility: hidden;
     }
+}
+
+.swal2-styled.swal2-confirm  {
+    background-color: var(--primary)!important;
 }

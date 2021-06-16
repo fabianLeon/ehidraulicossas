@@ -1,34 +1,23 @@
 <div class="card-without-title">
+
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="form-row">
-            <div class="field">
-                <label for="first-name">Nombres: </label>
-                <input id="first-name" placeholder="Nombres" type="text" formControlName="nombres">
-            </div>
-            <div class="field">
-                <label for="last-name">Apellidos: </label>
-                <input id="last-name" placeholder="Apelidos" type="text" formControlName="apellidos">
-            </div>
-        </div>
-    
-        <div>
-    
-            <label for="email">Correo electrónico: </label>
-            <input id="email" type="email" formControlName="email">
-    
-            <label for="phone">Teléfono de contacto: </label>
-            <input id="phone" type="tel" formControlName="telefono">
-    
-        </div>
-    
-        <div>
-            <label for="info">Información adicional: </label>
-    
-            <textarea id="info" type="text" formControlName="info" rows="5"></textarea>
-    
-        </div>
-    
+
+        <label for="first-name">Nombres: </label>
+        <input id="first-name" placeholder="Nombres" type="text" formControlName="nombres">
+
+        <label for="last-name">Apellidos: </label>
+        <input id="last-name" placeholder="Apelidos" type="text" formControlName="apellidos">
+
+        <label for="email">Correo electrónico: </label>
+        <input id="email" type="email" formControlName="email">
+
+        <label for="phone">Teléfono de contacto: </label>
+        <input id="phone" type="tel" formControlName="telefono">
+
+        <label for="info">Información adicional: </label>
+        <textarea id="info" type="text" formControlName="info" rows="5"></textarea>
+
         <button type="submit" [disabled]="!contactForm.valid">Enviar</button>
-    
+
     </form>
 </div>

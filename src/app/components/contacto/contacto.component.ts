@@ -41,7 +41,7 @@ export class ContactoComponent implements OnInit {
         .then(res => {
           (Swal as any).fire({
             title: 'Solicitud Recibida',
-            text: 'Señor(a) '+ data.nombres + ', uno de nuestros asesores lo contactará pronto',
+            html: `Señor(a) <b>${data.nombres} ${data.apellidos}</b><br> uno de nuestros asesores lo contactará pronto`,
           });
         }, err => reject(err));
     });
